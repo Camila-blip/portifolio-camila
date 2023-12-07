@@ -1,0 +1,17 @@
+@import "@/styles/themes/variables";
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ContainerList {
+    color: $white;
+}
+
+.List {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}

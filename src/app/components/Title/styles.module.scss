@@ -1,0 +1,8 @@
+@import "@/styles/themes/variables";
+
+.Title {
+    color: $white;
+    strong {
+        color: $primaryColor;
+    }
+}
