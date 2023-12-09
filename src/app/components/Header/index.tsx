@@ -8,10 +8,10 @@ export default function Header() {
             <Image
                 src="/assets/logo-techfox.svg"
                 alt="Logo TechFox"
-                width={79}
-                height={79}
+                width={70}
+                height={70}
             />
-            <div className={Styles.ContainerList}>
+            <nav className={Styles.ContainerList}>
                 <ul className={Styles.List}>
                     <li>
                         <Link href="">
@@ -33,7 +33,7 @@ export default function Header() {
                         </Link>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
     );
 }
