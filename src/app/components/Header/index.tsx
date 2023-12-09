@@ -14,13 +14,23 @@ export default function Header() {
             <div className={Styles.ContainerList}>
                 <ul className={Styles.List}>
                     <li>
-                        <Link href="">Home</Link>
+                        <Link href="">
+                            <span className={Styles.Simbol}>{"< "}</span>Home
+                            <span className={Styles.Simbol}>{" / >"}</span>
+                        </Link>
                     </li>
                     <li>
-                        <Link href="">Sobre</Link>
+                        <Link href="">
+                            <span className={Styles.Simbol}>{"< "}</span>Sobre
+                            <span className={Styles.Simbol}>{" / >"}</span>
+                        </Link>
                     </li>
                     <li>
-                        <Link href="">Portifólio</Link>
+                        <Link href="">
+                            <span className={Styles.Simbol}>{"< "}</span>
+                            Portifólio
+                            <span className={Styles.Simbol}>{" / >"}</span>
+                        </Link>
                     </li>
                 </ul>
             </div>

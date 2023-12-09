@@ -4,6 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1em 2.5em;
+    border-bottom: solid 1px $primaryColor;
 }
 
 .ContainerList {
@@ -12,6 +14,12 @@
 
 .List {
     display: flex;
-    gap: 30px;
+    gap: 60px;
     list-style: none;
+    margin-right: 10em;
+}
+
+.Simbol {
+    color: $primaryColor;
+    font-weight: bold;
 }
