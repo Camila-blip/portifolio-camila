@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -13,6 +16,7 @@ body {
         rgba(0, 0, 0, 0.85) 51%,
         rgba(0, 0, 42, 1) 100%
     );
+    font-family: "Vollkorn", serif;
 }
 
 a {

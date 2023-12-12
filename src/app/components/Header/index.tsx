@@ -1,16 +1,20 @@
 import Styles from "./styles.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import { ReactNode } from "react";
 
-export default function Header() {
+export default function Header(): ReactNode {
     return (
         <div className={Styles.Container}>
-            <Image
-                src="/assets/logo-techfox.svg"
-                alt="Logo TechFox"
-                width={70}
-                height={70}
-            />
+            <div>
+                <Image
+                    className={Styles.img}
+                    src="/assets/logo-techfox.svg"
+                    alt="Logo TechFox"
+                    width={60}
+                    height={60}
+                />
+            </div>
             <nav className={Styles.ContainerList}>
                 <ul className={Styles.List}>
                     <li>

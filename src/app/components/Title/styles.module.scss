@@ -1,8 +1,12 @@
 @import "@/styles/themes/variables";
 
 .Title {
+    margin-bottom: 1em;
     color: $white;
+    font-size: 1.6rem;
+    font-family: "Aldrich", sans-serif;
     strong {
         color: $primaryColor;
+        font-family: "Aldrich", sans-serif;
     }
 }
