@@ -2,7 +2,7 @@ import { render } from "@testing-library/react";
 import Header from ".";
 
 describe("Header", () => {
-    it("Should render the Header component correctly", () => {
+    it("Renderiza o componente header", () => {
         const { getByAltText, getByText } = render(<Header />);
 
         //selecionar o alt da imagem
