@@ -1,3 +1,4 @@
+import React from "react";
 import Styles from "./styles.module.scss";
 import Link from "next/link";
 import Image from "next/image";
