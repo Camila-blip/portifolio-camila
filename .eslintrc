@@ -1,0 +1,31 @@
+{
+    "extends": [
+        "next/core-web-vitals",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+        "react/react-in-jsx-scope": "off",
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "react/prop-types": "off",
+        "@typescript-eslint/no-explicit-any": ["off"],
+        "react/no-unknown-property": ["off"],
+        "react/display-name": ["off"],
+        "react/no-unescaped-entities": ["off"],
+        "@typescript-eslint/no-namespace": ["off"]
+    }
+}
