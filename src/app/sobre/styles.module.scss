@@ -1,0 +1,10 @@
+@import "@/styles/themes/variables";
+
+.Title {
+    margin: 4em 1.5em;
+    text-align: center;
+    h2 {
+        color: $white;
+        font-weight: 500;
+    }
+}

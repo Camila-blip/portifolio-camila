@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Styles from "./styles.module.scss";
 
-export default function Fatos(): React.ReactNode {
+interface TypeFatos {
+    spanFatos: string[];
+}
+
+export default function Fatos({ spanFatos }: TypeFatos): React.ReactNode {
     return (
         <div className={Styles.Fatos}>
             <div>
@@ -12,20 +16,10 @@ export default function Fatos(): React.ReactNode {
                     height={400}
                 />
             </div>
-            <div>
-                <span>Amante de gatos 🐾</span>
-
-                <span>Apaixonado por música eletrônica 🎶</span>
-
-                <span>Gamer no PS4 e PC 🎮</span>
-
-                <span>Skatista de fim de semana 🛹</span>
-
-                <span>Exploradora com meus cachorros 🐕</span>
-
-                <span>Apreciadora de café matinal ☕</span>
-
-                <span>Motociclista nas horas vagas 🏍️</span>
+            <div className={Styles.Fatos_Content}>
+                {spanFatos.map((data, index) => (
+                    <span key={index}>{data}</span>
+                ))}
             </div>
         </div>
     );

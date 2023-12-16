@@ -1,0 +1,17 @@
+@import "@/styles/themes/variables";
+
+.Fatos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &_Content {
+        display: flex;
+        flex-direction: column;
+        span {
+            font-size: 1.5rem;
+            color: $white;
+            font-weight: 200;
+        }
+
+        justify-content: center;
+    }
+}
