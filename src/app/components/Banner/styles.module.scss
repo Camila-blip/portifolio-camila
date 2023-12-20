@@ -1,6 +1,7 @@
 @import "@/styles/themes/variables";
 
 .Banner {
+    position: relative;
     img {
         width: 100%;
         height: 80vh;
@@ -10,16 +11,38 @@
 .List {
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    font-size: 2rem;
     // color: $white;
 }
 
-.Title {
+.Title,
+.Grid {
+    h1 {
+        font-size: 2.5rem;
+        font-size: 2.5rem;
+        background-color: rgba(16, 15, 50, 0.53);
+        border-radius: 40px;
+        display: inline-block;
+        padding: 5px 20px;
+    }
     color: $white;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.Title {
+    top: 20%;
+    text-align: center;
 }
 
 .Grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    top: 40%;
+    text-align: center;
 }
 
 .Avatar {
@@ -29,5 +52,14 @@
 }
 
 .Text {
+    span {
+        border-bottom: 1px solid $primaryColor;
+    }
     color: $white;
+    position: absolute;
+    top: 75%;
+    right: 0;
+    left: 10%;
+    bottom: 0;
+    font-size: 2rem;
 }

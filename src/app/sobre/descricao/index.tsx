@@ -1,3 +1,4 @@
+import React from "react";
 import Styles from "./styles.module.scss";
 
 interface TypeDescricao {
@@ -10,7 +11,11 @@ export default function Descricao({
     return (
         <>
             {PDescricao.map((data, index) => (
-                <p className={Styles.Paragrafo} key={index}>
+                <p
+                    data-testid={`data-${index}`}
+                    className={Styles.Paragrafo}
+                    key={index}
+                >
                     {data}
                 </p>
             ))}

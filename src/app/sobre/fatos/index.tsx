@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import Styles from "./styles.module.scss";
 
@@ -18,7 +19,9 @@ export default function Fatos({ spanFatos }: TypeFatos): React.ReactNode {
             </div>
             <div className={Styles.Fatos_Content}>
                 {spanFatos.map((data, index) => (
-                    <span key={index}>{data}</span>
+                    <span data-testid={`data-${index}`} key={index}>
+                        {data}
+                    </span>
                 ))}
             </div>
         </div>

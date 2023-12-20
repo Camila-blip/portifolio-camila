@@ -7,7 +7,7 @@ export default function Banner(): ReactNode {
     const skills = [
         { id: 1, role: "Web developer" },
         { id: 2, role: "Front-end Developer" },
-        { id: 1, role: "FullStack Developer" },
+        { id: 3, role: "FullStack Developer" },
     ];
 
     return (

@@ -1,3 +1,4 @@
+import React from "react";
 import Styles from "./styles.module.scss";
 import { Title, Container, LinhaLaranja } from "../components";
 import Fatos from "./fatos";
